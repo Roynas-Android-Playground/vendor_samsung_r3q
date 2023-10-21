@@ -8,109 +8,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/samsung/r3q/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/samsung/r3q/proprietary/vendor/lib/libtinyalsa.r3q.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyalsa.r3q.so \
     vendor/samsung/r3q/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/ans_off/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_off/ans_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/ans_on/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_on/ans_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_HDR.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_params.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_config.txt \
-    vendor/samsung/r3q/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_params.txt \
     vendor/samsung/r3q/proprietary/system_ext/etc/init/perfservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/perfservice.rc \
     vendor/samsung/r3q/proprietary/system_ext/etc/seccomp_policy/perfservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/perfservice.policy \
     vendor/samsung/r3q/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
@@ -186,6 +85,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/samsung/r3q/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/samsung/r3q/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Bluetooth_cal.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Codec_cal.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/General_cal.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Global_cal.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Handset_cal.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Hdmi_cal.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Headset_cal.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
+    vendor/samsung/r3q/proprietary/vendor/etc/audconf/OPEN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFile.qwsp \
+    vendor/samsung/r3q/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    vendor/samsung/r3q/proprietary/vendor/etc/audio_platform_info_diff.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_diff.xml \
+    vendor/samsung/r3q/proprietary/vendor/etc/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/samsung/r3q/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
@@ -233,7 +144,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/etc/init/wifi_qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_qcom.rc \
     vendor/samsung/r3q/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/samsung/r3q/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/samsung/r3q/proprietary/vendor/etc/listen_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/listen_platform_info.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/lm/GameOptimizationFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/GameOptimizationFeature.xml \
@@ -244,6 +154,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/samsung/r3q/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    vendor/samsung/r3q/proprietary/vendor/etc/media_codecs_qcom_video_mpeg2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_qcom_video_mpeg2.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
@@ -294,9 +205,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/samsung/r3q/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/r3q/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/samsung/r3q/proprietary/vendor/etc/sound_trigger_mixer_paths_wcd9340.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340.xml \
-    vendor/samsung/r3q/proprietary/vendor/etc/sound_trigger_mixer_paths_wcd9340_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340_qrd.xml \
-    vendor/samsung/r3q/proprietary/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/samsung/r3q/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/r3q/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -435,6 +343,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib/lib_SamsungRec_07010.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_07010.so \
     vendor/samsung/r3q/proprietary/vendor/lib/lib_SoundAlive_SRC384_ver320.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_SRC384_ver320.so \
     vendor/samsung/r3q/proprietary/vendor/lib/lib_soundaliveresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_soundaliveresampler.so \
+    vendor/samsung/r3q/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -444,6 +353,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
+    vendor/samsung/r3q/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
@@ -457,6 +367,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libchiss3alogdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchiss3alogdebug.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
+    vendor/samsung/r3q/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
@@ -534,9 +445,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper_jni.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
+    vendor/samsung/r3q/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
+    vendor/samsung/r3q/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniplugin.so \
     vendor/samsung/r3q/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
@@ -571,6 +484,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/samsung/r3q/proprietary/vendor/lib/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.2.so \
     vendor/samsung/r3q/proprietary/vendor/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/samsung/r3q/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/samsung/r3q/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/samsung/r3q/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/samsung/r3q/proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.memory.pasrmanager@1.0.so \
@@ -755,6 +669,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/samsung/r3q/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpu.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
@@ -787,6 +702,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
+    vendor/samsung/r3q/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
@@ -803,6 +719,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
+    vendor/samsung/r3q/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
@@ -822,6 +739,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r3q/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
+    vendor/samsung/r3q/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/samsung/r3q/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
@@ -899,4 +817,5 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
+    manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.hardware.servicetracker@1.2-service
