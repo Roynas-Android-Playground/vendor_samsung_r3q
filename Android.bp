@@ -180,24 +180,6 @@ android_app_import {
 }
 
 dex_import {
-	name: "QPerformance",
-	owner: "samsung",
-	jars: ["proprietary/framework/QPerformance.jar"],
-}
-
-dex_import {
-	name: "QXPerformance",
-	owner: "samsung",
-	jars: ["proprietary/framework/QXPerformance.jar"],
-}
-
-dex_import {
-	name: "UxPerformance",
-	owner: "samsung",
-	jars: ["proprietary/framework/UxPerformance.jar"],
-}
-
-dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "samsung",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
